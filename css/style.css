@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+.imagen-carousel{
+    height: 640px;
+    object-fit: cover;
+}
+
+@media all and (max-width:767px)
+{
+    .imagen-carousel{
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .cartas{
+        margin-top: 10px;
+    }
+    
+    .contenedor-card article{
+        justify-content: center;
+        padding-left: 45px;
+        margin-bottom: 10px;
+    }
+    
+
+    .imagen-iphone{
+        width: 250px;
+        position: relative;
+        left: 40px;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    .imagen-iphone{
+        
+        width: 350px;
+        
+    }
+
+    .cartas{
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media all and (min-width: 992px)
+{
+    .error404{
+       width: 50%;
+    }
+
+}
